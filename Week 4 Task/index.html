@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Filter Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#section1">Upload</a></li>
+      <li><a href="#section2">Result</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>AI Image Filter Application</h1>
+  </header>
+
+  <section id="section1">
+    <h2>Upload Image</h2>
+    <p>Select an image to apply AI-based filters:</p>
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <label for="filterSelect">Choose a filter:</label>
+    <select id="filterSelect">
+      <option value="grayscale">Grayscale</option>
+      <option value="sepia">Sepia</option>
+      <option value="invert">Invert</option>
+      <option value="brightness">Brightness</option>
+      <option value="rotate">Rotate 90°</option>
+      <option value="flip-horizontal">Flip Horizontally</option>
+      <option value="flip-vertical">Flip Vertically</option>
+    </select>
+
+    <button id="applyFilter">Apply Filter</button>
+  </section>
+
+  <section id="section2">
+    <h2>Filtered Image</h2>
+    <p>Here’s the result after applying the filter:</p>
+    <canvas id="filteredCanvas"></canvas>
+  </section>
+
+	 <footer>
+    &copy; 2025 Survey Project
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

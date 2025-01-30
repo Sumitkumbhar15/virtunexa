@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #00c6ff;
+}
+section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+.middle {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%; 
+ text-align: center;
+ margin: 0;
+ font-size: 2rem;
+ color: #333;
+}
+#home {
+    background: url('https://th.bing.com/th?id=OIP.EwbatycHx_915hcNzd7vRgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2') no-repeat center center/cover;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#home h1 {
+    font-size: 3rem;
+}
+#services {
+    background: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.service {
+    flex: 1 1 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    background: #333;
+    color: white;
+    height: 100px; 
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .footer-container {
+      text-align: center;
+    }
+    .footer-container p {
+      font-size: 1rem;
+      margin: 0;
+    }
+    .service img {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background: #333;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    nav .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px 0;
+    }
+}
