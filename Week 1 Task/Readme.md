@@ -1,11 +1,11 @@
 # Fitness Webpage
 ---
 
-![Fitness](1.png)
+![Fitness](./img/1.png)
 
-![Fitness](2.png)
+![Fitness](./img/2.png)
 
-![Fitness](3.png)
+![Fitness](./img/3.png)
 
 ## Technologies Used
 - HTML5
